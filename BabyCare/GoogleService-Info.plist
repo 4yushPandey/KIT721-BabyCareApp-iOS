@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>939119036503-37slbegulo17t8sucnavgvuknf0qddgq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.939119036503-37slbegulo17t8sucnavgvuknf0qddgq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDlI9008KIhOWfh2zTKHTzjPBJpxu5PVd8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>939119036503</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>au.edu.utas.kit721.apandey3.BabyCare</string>
+	<key>PROJECT_ID</key>
+	<string>kit721-7ef30</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kit721-7ef30.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:939119036503:ios:53612fab045818a1b8bb12</string>
+</dict>
+</plist>
