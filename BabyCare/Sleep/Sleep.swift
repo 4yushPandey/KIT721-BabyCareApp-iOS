@@ -12,9 +12,8 @@ public struct Sleep : Codable
 {
     @DocumentID var documentID:String?
     var date: String
-    var startTime: String
-    var endTime: String
-    var sleepNote: String
-    var sleepDuration: Float
-
+    var sleepStart: String
+    var sleepEnd: String?
+    var sleepNote: String?
+    var sleepDuration: String?
 }

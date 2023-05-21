@@ -1,53 +1,42 @@
 //
-//  FeedTableViewController.swift
+//  GrowthTableViewController.swift
 //  BabyCare
 //
-//  Created by Ayush Pandey on 2/5/2023.
+//  Created by Ayush Pandey on 4/5/2023.
 //
 
 import UIKit
 import Firebase
 import FirebaseFirestoreSwift
 
-
-// Tutorial 8 and 9
-
-class FeedTableViewController: UITableViewController {
-    var feeds = [Feed]()
+class GrowthTableViewController: UITableViewController {
     
-    @IBAction func unwindToFeedList(sender: UIStoryboardSegue)
+    var growths = [Growth]()
+    
+
+    @IBAction func unwindToGrowthList(sender: UIStoryboardSegue)
     {
         //we could reload from db, but lets just trust the local movie object
-        if let detailScreen = sender.source as? FeedDetailViewController
+        if let detailScreen = sender.source as? GrowthDetailViewController
         {
-            feeds[detailScreen.feedIndex!] = detailScreen.feed!
+            growths[detailScreen.growthIndex!] = detailScreen.growth!
             tableView.reloadData()
         }
+    }
+
+    @IBAction func unwindToGrowthListWithCancel(sender: UIStoryboardSegue)
+    {
+    }
+    
+    @IBAction func onNew(_ sender: Any) {
         
     }
     
-    
-    
-
-    @IBAction func unwindToFeedListWithCancel(sender: UIStoryboardSegue)
-    {
-        tableView.reloadData()
-    }
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
         let db = Firestore.firestore()
-                let feedCollection = db.collection("feedingHistory")
-                feedCollection.getDocuments() { (result, err) in
+                let growthCollection = db.collection("growthHistory")
+                growthCollection.getDocuments() { (result, err) in
                     if let err = err
                     {
                         print("Error getting documents: \(err)")
@@ -58,29 +47,28 @@ class FeedTableViewController: UITableViewController {
                         {
                             let conversionResult = Result
                             {
-                                try document.data(as: Feed.self)
+                                try document.data(as: Growth.self)
                             }
                             switch conversionResult
                             {
-                                case .success(let feed):
-                                    print("Feed: \(feed)")
+                                case .success(let growth):
+                                    print("Growth: \(growth)")
                                         
                                     //NOTE THE ADDITION OF THIS LINE
-                                    self.feeds.append(feed)
+                                    self.growths.append(growth)
                                     
                                 case .failure(let error):
-                                    // A `feed` value could not be initialized from the DocumentSnapshot.
-                                    print("Error decoding feeding data: \(error)")
+                                    // A `Movie` value could not be initialized from the DocumentSnapshot.
+                                    print("Error decoding growth data: \(error)")
                             }
                         }
                         
                         //NOTE THE ADDITION OF THIS LINE
                         self.tableView.reloadData()
-                        
                     }
                 }
-                
-            }
+
+    }
 
     // MARK: - Table view data source
 
@@ -91,23 +79,23 @@ class FeedTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return feeds.count
+        return growths.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GrowthTableViewCell", for: indexPath)
 
-        //get the feed for this row
-        let feed = feeds[indexPath.row]
+        //get the movie for this row
+        let growth = growths[indexPath.row]
 
-        //down-cast the cell from UITableViewCell to our cell class feedUITableViewCell
+        //down-cast the cell from UITableViewCell to our cell class MovieUITableViewCell
         //note, this could fail, so we use an if let.
-        if let feedCell = cell as? FeedTableViewCell
+        if let growthCell = cell as? GrowthTableViewCell
         {
             //populate the cell
-            feedCell.feedDateLabel.text = feed.feedDate + "----------" + feed.feedStartTime
-            feedCell.milkTypeLabel.text = feed.milkType
+            growthCell.heightLabel.text = growth.height
+            growthCell.measuredDateLabel.text = growth.measuredDate
         }
 
         return cell
@@ -118,67 +106,75 @@ class FeedTableViewController: UITableViewController {
         super.prepare(for: segue, sender: sender)
         
         // is this the segue to the details screen? (in more complex apps, there is more than one segue per screen)
-        if segue.identifier == "ShowFeedDetailSegue"
+        if segue.identifier == "ShowGrowthDetailSegue"
         {
               //down-cast from UIViewController to DetailViewController (this could fail if we didn’t link things up properly)
-              guard let detailViewController = segue.destination as? FeedDetailViewController else
+              guard let detailViewController = segue.destination as? GrowthDetailViewController else
               {
                   fatalError("Unexpected destination: \(segue.destination)")
               }
 
-              //down-cast from UITableViewCell to feedUITableViewCell (this could fail if we didn’t link things up properly)
-              guard let selectedFeedCell = sender as? FeedTableViewCell else
+              //down-cast from UITableViewCell to MovieUITableViewCell (this could fail if we didn’t link things up properly)
+              guard let selectedGrowthCell = sender as? GrowthTableViewCell else
               {
                   fatalError("Unexpected sender: \( String(describing: sender))")
               }
 
               //get the number of the row that was pressed (this could fail if the cell wasn’t in the table but we know it is)
-              guard let indexPath = tableView.indexPath(for: selectedFeedCell) else
+              guard let indexPath = tableView.indexPath(for: selectedGrowthCell) else
               {
                   fatalError("The selected cell is not being displayed by the table")
               }
 
-              //work out which feed it is using the row number
-              let selectedFeed = feeds[indexPath.row]
+              //work out which movie it is using the row number
+              let selectedGrowth = growths[indexPath.row]
 
               //send it to the details screen
-              detailViewController.feed = selectedFeed
-              detailViewController.feedIndex = indexPath.row
+              detailViewController.growth = selectedGrowth
+              detailViewController.growthIndex = indexPath.row
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ShowFeedDetailSegue", sender: tableView.cellForRow(at: indexPath))
+        performSegue(withIdentifier: "ShowGrowthDetailSegue", sender: tableView.cellForRow(at: indexPath))
     }
-
-    func fetchFeedsData() {
+    
+    func fetchGrowthData() {
         let db = Firestore.firestore()
-        let feedCollection = db.collection("feedingHistory")
-        
-        feedCollection.getDocuments() { [weak self] (result, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                self?.feeds.removeAll() // Clear the existing data
-            
-                for document in result!.documents {
-                    let conversionResult = Result {
-                        try document.data(as: Feed.self)
-                    }
-                    switch conversionResult {
-                    case .success(let feed):
-                        print("Feed: \(feed)")
-                        self?.feeds.append(feed)
-                    case .failure(let error):
-                        print("Error decoding feeding data: \(error)")
+        let growthCollection = db.collection("growthHistory")
+        growthCollection.getDocuments() { (result, err) in
+            growthCollection.getDocuments() { [weak self] (result, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else { self?.growths.removeAll()
+                    for document in result!.documents
+                    {
+                        let conversionResult = Result
+                        {
+                            try document.data(as: Growth.self)
+                        }
+                        switch conversionResult
+                        {
+                        case .success(let growth):
+                            print("Growth: \(growth)")
+                            
+                            //NOTE THE ADDITION OF THIS LINE
+                            self?.growths.append(growth)
+                            
+                        case .failure(let error):
+                            // A `Movie` value could not be initialized from the DocumentSnapshot.
+                            print("Error decoding growth data: \(error)")
+                        }
                     }
                 }
-                
-                self?.tableView.reloadData() // Reload the table view with new data
+                //NOTE THE ADDITION OF THIS LINE
+                self?.tableView.reloadData()
             }
-        }
-    }
+        }}
+
     /*
+     
+     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 

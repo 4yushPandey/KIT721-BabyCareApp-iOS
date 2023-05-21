@@ -7,23 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF06ABC32A0CCB5800CC06E0 /* GrowthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABB02A0CCB5800CC06E0 /* GrowthTableViewController.swift */; };
+		BF06ABC42A0CCB5800CC06E0 /* Dashboard in Resources */ = {isa = PBXBuildFile; fileRef = BF06ABB12A0CCB5800CC06E0 /* Dashboard */; };
+		BF06ABC62A0CCB5800CC06E0 /* Poop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABB32A0CCB5800CC06E0 /* Poop.swift */; };
+		BF06ABC72A0CCB5800CC06E0 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABB42A0CCB5800CC06E0 /* FeedDetailViewController.swift */; };
+		BF06ABC82A0CCB5800CC06E0 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABB52A0CCB5800CC06E0 /* Sleep.swift */; };
+		BF06ABC92A0CCB5800CC06E0 /* Growth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABB62A0CCB5800CC06E0 /* Growth.swift */; };
+		BF06ABCA2A0CCB5800CC06E0 /* PoopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABB72A0CCB5800CC06E0 /* PoopTableViewCell.swift */; };
+		BF06ABCC2A0CCB5800CC06E0 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABB92A0CCB5800CC06E0 /* FeedTableViewController.swift */; };
+		BF06ABCE2A0CCB5800CC06E0 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABBB2A0CCB5800CC06E0 /* FeedTableViewCell.swift */; };
+		BF06ABCF2A0CCB5800CC06E0 /* SleepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABBC2A0CCB5800CC06E0 /* SleepTableViewCell.swift */; };
+		BF06ABD02A0CCB5800CC06E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABBD2A0CCB5800CC06E0 /* ViewController.swift */; };
+		BF06ABD12A0CCB5800CC06E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF06ABBE2A0CCB5800CC06E0 /* Assets.xcassets */; };
+		BF06ABD22A0CCB5800CC06E0 /* PoopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABBF2A0CCB5800CC06E0 /* PoopTableViewController.swift */; };
+		BF06ABD32A0CCB5800CC06E0 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABC02A0CCB5800CC06E0 /* Feed.swift */; };
+		BF06ABD42A0CCB5800CC06E0 /* GrowthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABC12A0CCB5800CC06E0 /* GrowthTableViewCell.swift */; };
+		BF06ABD52A0CCB5800CC06E0 /* SleepTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABC22A0CCB5800CC06E0 /* SleepTableViewController.swift */; };
+		BF06ABD92A0DA18A00CC06E0 /* SleepDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABD82A0DA18A00CC06E0 /* SleepDetailViewController.swift */; };
+		BF06ABDB2A0DAE9B00CC06E0 /* GrowthDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABDA2A0DAE9B00CC06E0 /* GrowthDetailViewController.swift */; };
+		BF06ABDD2A0DB77600CC06E0 /* PoopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06ABDC2A0DB77600CC06E0 /* PoopDetailViewController.swift */; };
+		BF0739D72A1112EC00ABF606 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF0739D62A1112EC00ABF606 /* FirebaseFirestoreSwift */; };
+		BF0739D92A1112EC00ABF606 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BF0739D82A1112EC00ABF606 /* FirebaseStorage */; };
+		BF23A4A62A0F7AD400DE3BFB /* AddFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23A4A52A0F7AD400DE3BFB /* AddFeedViewController.swift */; };
+		BF23A4AA2A0F7AEA00DE3BFB /* AddSleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23A4A92A0F7AEA00DE3BFB /* AddSleepViewController.swift */; };
+		BF23A4AC2A0F7AF600DE3BFB /* AddGrowthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23A4AB2A0F7AF600DE3BFB /* AddGrowthViewController.swift */; };
+		BF23A4AE2A10427F00DE3BFB /* AddPoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23A4AD2A10427F00DE3BFB /* AddPoopViewController.swift */; };
 		BF9A6E622A005AFD000C16C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A6E612A005AFD000C16C0 /* AppDelegate.swift */; };
 		BF9A6E642A005AFD000C16C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A6E632A005AFD000C16C0 /* SceneDelegate.swift */; };
 		BF9A6E692A005AFD000C16C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9A6E672A005AFD000C16C0 /* Main.storyboard */; };
 		BF9A6E6B2A005AFE000C16C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9A6E6A2A005AFE000C16C0 /* Assets.xcassets */; };
 		BF9A6E6E2A005AFE000C16C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9A6E6C2A005AFE000C16C0 /* LaunchScreen.storyboard */; };
-		BFA0EEBF2A005DCA00135344 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BFA0EEBE2A005DCA00135344 /* FirebaseFirestoreSwift */; };
 		BFA0EEC12A005DE900135344 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFA0EEC02A005DE900135344 /* GoogleService-Info.plist */; };
-		BFA20A322A01064E004BE510 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20A312A01064E004BE510 /* Feed.swift */; };
-		BFA20A352A0109CF004BE510 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20A342A0109CF004BE510 /* Sleep.swift */; };
-		BFA20A372A010A44004BE510 /* Poop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20A362A010A44004BE510 /* Poop.swift */; };
-		BFA20A392A010AA5004BE510 /* Growth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20A382A010AA5004BE510 /* Growth.swift */; };
-		BFA20A3B2A010B65004BE510 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20A3A2A010B65004BE510 /* Movie.swift */; };
-		BFA20A3F2A0112C7004BE510 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20A3E2A0112C7004BE510 /* FeedTableViewCell.swift */; };
-		BFA20A412A0114A7004BE510 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20A402A0114A7004BE510 /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF06ABB02A0CCB5800CC06E0 /* GrowthTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrowthTableViewController.swift; sourceTree = "<group>"; };
+		BF06ABB12A0CCB5800CC06E0 /* Dashboard */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dashboard; sourceTree = "<group>"; };
+		BF06ABB32A0CCB5800CC06E0 /* Poop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poop.swift; sourceTree = "<group>"; };
+		BF06ABB42A0CCB5800CC06E0 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		BF06ABB52A0CCB5800CC06E0 /* Sleep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
+		BF06ABB62A0CCB5800CC06E0 /* Growth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Growth.swift; sourceTree = "<group>"; };
+		BF06ABB72A0CCB5800CC06E0 /* PoopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoopTableViewCell.swift; sourceTree = "<group>"; };
+		BF06ABB92A0CCB5800CC06E0 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		BF06ABBB2A0CCB5800CC06E0 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		BF06ABBC2A0CCB5800CC06E0 /* SleepTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepTableViewCell.swift; sourceTree = "<group>"; };
+		BF06ABBD2A0CCB5800CC06E0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF06ABBE2A0CCB5800CC06E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF06ABBF2A0CCB5800CC06E0 /* PoopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoopTableViewController.swift; sourceTree = "<group>"; };
+		BF06ABC02A0CCB5800CC06E0 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		BF06ABC12A0CCB5800CC06E0 /* GrowthTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrowthTableViewCell.swift; sourceTree = "<group>"; };
+		BF06ABC22A0CCB5800CC06E0 /* SleepTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepTableViewController.swift; sourceTree = "<group>"; };
+		BF06ABD82A0DA18A00CC06E0 /* SleepDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDetailViewController.swift; sourceTree = "<group>"; };
+		BF06ABDA2A0DAE9B00CC06E0 /* GrowthDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowthDetailViewController.swift; sourceTree = "<group>"; };
+		BF06ABDC2A0DB77600CC06E0 /* PoopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoopDetailViewController.swift; sourceTree = "<group>"; };
+		BF23A4A52A0F7AD400DE3BFB /* AddFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedViewController.swift; sourceTree = "<group>"; };
+		BF23A4A92A0F7AEA00DE3BFB /* AddSleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSleepViewController.swift; sourceTree = "<group>"; };
+		BF23A4AB2A0F7AF600DE3BFB /* AddGrowthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGrowthViewController.swift; sourceTree = "<group>"; };
+		BF23A4AD2A10427F00DE3BFB /* AddPoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPoopViewController.swift; sourceTree = "<group>"; };
 		BF9A6E5E2A005AFD000C16C0 /* BabyCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9A6E612A005AFD000C16C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF9A6E632A005AFD000C16C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,13 +72,6 @@
 		BF9A6E6D2A005AFE000C16C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF9A6E6F2A005AFE000C16C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFA0EEC02A005DE900135344 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BFA20A312A01064E004BE510 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
-		BFA20A342A0109CF004BE510 /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
-		BFA20A362A010A44004BE510 /* Poop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poop.swift; sourceTree = "<group>"; };
-		BFA20A382A010AA5004BE510 /* Growth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Growth.swift; sourceTree = "<group>"; };
-		BFA20A3A2A010B65004BE510 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		BFA20A3E2A0112C7004BE510 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
-		BFA20A402A0114A7004BE510 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA0EEBF2A005DCA00135344 /* FirebaseFirestoreSwift in Frameworks */,
+				BF0739D72A1112EC00ABF606 /* FirebaseFirestoreSwift in Frameworks */,
+				BF0739D92A1112EC00ABF606 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,10 +106,13 @@
 		BF9A6E602A005AFD000C16C0 /* BabyCare */ = {
 			isa = PBXGroup;
 			children = (
-				BFA20A332A0108EF004BE510 /* Growth */,
-				BFA20A302A010630004BE510 /* Poop */,
-				BFA20A2F2A010626004BE510 /* Sleep */,
-				BFA20A2E2A01061F004BE510 /* Feed */,
+				BF06ABBE2A0CCB5800CC06E0 /* Assets.xcassets */,
+				BF06ABB12A0CCB5800CC06E0 /* Dashboard */,
+				BFB347A42A12CAB500CCA0F3 /* Feed */,
+				BFB347A52A12CAC100CCA0F3 /* Growth */,
+				BFB347A62A12CAD200CCA0F3 /* Poop */,
+				BFB347A72A12CADE00CCA0F3 /* Sleep */,
+				BF06ABBD2A0CCB5800CC06E0 /* ViewController.swift */,
 				BFA0EEC02A005DE900135344 /* GoogleService-Info.plist */,
 				BF9A6E612A005AFD000C16C0 /* AppDelegate.swift */,
 				BF9A6E632A005AFD000C16C0 /* SceneDelegate.swift */,
@@ -83,43 +120,56 @@
 				BF9A6E6A2A005AFE000C16C0 /* Assets.xcassets */,
 				BF9A6E6C2A005AFE000C16C0 /* LaunchScreen.storyboard */,
 				BF9A6E6F2A005AFE000C16C0 /* Info.plist */,
-				BFA20A3A2A010B65004BE510 /* Movie.swift */,
 			);
 			path = BabyCare;
 			sourceTree = "<group>";
 		};
-		BFA20A2E2A01061F004BE510 /* Feed */ = {
+		BFB347A42A12CAB500CCA0F3 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				BFA20A312A01064E004BE510 /* Feed.swift */,
-				BFA20A3E2A0112C7004BE510 /* FeedTableViewCell.swift */,
-				BFA20A402A0114A7004BE510 /* FeedTableViewController.swift */,
+				BF06ABC02A0CCB5800CC06E0 /* Feed.swift */,
+				BF06ABB42A0CCB5800CC06E0 /* FeedDetailViewController.swift */,
+				BF06ABBB2A0CCB5800CC06E0 /* FeedTableViewCell.swift */,
+				BF06ABB92A0CCB5800CC06E0 /* FeedTableViewController.swift */,
+				BF23A4A52A0F7AD400DE3BFB /* AddFeedViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
 		};
-		BFA20A2F2A010626004BE510 /* Sleep */ = {
+		BFB347A52A12CAC100CCA0F3 /* Growth */ = {
 			isa = PBXGroup;
 			children = (
-				BFA20A342A0109CF004BE510 /* Sleep.swift */,
+				BF06ABB62A0CCB5800CC06E0 /* Growth.swift */,
+				BF06ABC12A0CCB5800CC06E0 /* GrowthTableViewCell.swift */,
+				BF06ABB02A0CCB5800CC06E0 /* GrowthTableViewController.swift */,
+				BF06ABDA2A0DAE9B00CC06E0 /* GrowthDetailViewController.swift */,
+				BF23A4AB2A0F7AF600DE3BFB /* AddGrowthViewController.swift */,
 			);
-			path = Sleep;
+			path = Growth;
 			sourceTree = "<group>";
 		};
-		BFA20A302A010630004BE510 /* Poop */ = {
+		BFB347A62A12CAD200CCA0F3 /* Poop */ = {
 			isa = PBXGroup;
 			children = (
-				BFA20A362A010A44004BE510 /* Poop.swift */,
+				BF06ABB32A0CCB5800CC06E0 /* Poop.swift */,
+				BF06ABB72A0CCB5800CC06E0 /* PoopTableViewCell.swift */,
+				BF06ABBF2A0CCB5800CC06E0 /* PoopTableViewController.swift */,
+				BF06ABDC2A0DB77600CC06E0 /* PoopDetailViewController.swift */,
+				BF23A4AD2A10427F00DE3BFB /* AddPoopViewController.swift */,
 			);
 			path = Poop;
 			sourceTree = "<group>";
 		};
-		BFA20A332A0108EF004BE510 /* Growth */ = {
+		BFB347A72A12CADE00CCA0F3 /* Sleep */ = {
 			isa = PBXGroup;
 			children = (
-				BFA20A382A010AA5004BE510 /* Growth.swift */,
+				BF06ABB52A0CCB5800CC06E0 /* Sleep.swift */,
+				BF06ABBC2A0CCB5800CC06E0 /* SleepTableViewCell.swift */,
+				BF06ABC22A0CCB5800CC06E0 /* SleepTableViewController.swift */,
+				BF06ABD82A0DA18A00CC06E0 /* SleepDetailViewController.swift */,
+				BF23A4A92A0F7AEA00DE3BFB /* AddSleepViewController.swift */,
 			);
-			path = Growth;
+			path = Sleep;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +189,8 @@
 			);
 			name = BabyCare;
 			packageProductDependencies = (
-				BFA0EEBE2A005DCA00135344 /* FirebaseFirestoreSwift */,
+				BF0739D62A1112EC00ABF606 /* FirebaseFirestoreSwift */,
+				BF0739D82A1112EC00ABF606 /* FirebaseStorage */,
 			);
 			productName = BabyCare;
 			productReference = BF9A6E5E2A005AFD000C16C0 /* BabyCare.app */;
@@ -157,6 +208,7 @@
 				TargetAttributes = {
 					BF9A6E5D2A005AFD000C16C0 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -170,7 +222,7 @@
 			);
 			mainGroup = BF9A6E552A005AFD000C16C0;
 			packageReferences = (
-				BFA0EEBD2A005DCA00135344 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BF0739D52A1112EC00ABF606 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = BF9A6E5F2A005AFD000C16C0 /* Products */;
 			projectDirPath = "";
@@ -189,6 +241,8 @@
 				BF9A6E6E2A005AFE000C16C0 /* LaunchScreen.storyboard in Resources */,
 				BFA0EEC12A005DE900135344 /* GoogleService-Info.plist in Resources */,
 				BF9A6E6B2A005AFE000C16C0 /* Assets.xcassets in Resources */,
+				BF06ABC42A0CCB5800CC06E0 /* Dashboard in Resources */,
+				BF06ABD12A0CCB5800CC06E0 /* Assets.xcassets in Resources */,
 				BF9A6E692A005AFD000C16C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,15 +254,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA20A352A0109CF004BE510 /* Sleep.swift in Sources */,
-				BFA20A322A01064E004BE510 /* Feed.swift in Sources */,
-				BFA20A372A010A44004BE510 /* Poop.swift in Sources */,
+				BF06ABC32A0CCB5800CC06E0 /* GrowthTableViewController.swift in Sources */,
+				BF06ABD32A0CCB5800CC06E0 /* Feed.swift in Sources */,
+				BF06ABD42A0CCB5800CC06E0 /* GrowthTableViewCell.swift in Sources */,
+				BF23A4A62A0F7AD400DE3BFB /* AddFeedViewController.swift in Sources */,
+				BF06ABD92A0DA18A00CC06E0 /* SleepDetailViewController.swift in Sources */,
 				BF9A6E622A005AFD000C16C0 /* AppDelegate.swift in Sources */,
-				BFA20A392A010AA5004BE510 /* Growth.swift in Sources */,
-				BFA20A3B2A010B65004BE510 /* Movie.swift in Sources */,
-				BFA20A412A0114A7004BE510 /* FeedTableViewController.swift in Sources */,
-				BFA20A3F2A0112C7004BE510 /* FeedTableViewCell.swift in Sources */,
 				BF9A6E642A005AFD000C16C0 /* SceneDelegate.swift in Sources */,
+				BF06ABCA2A0CCB5800CC06E0 /* PoopTableViewCell.swift in Sources */,
+				BF06ABCC2A0CCB5800CC06E0 /* FeedTableViewController.swift in Sources */,
+				BF06ABC62A0CCB5800CC06E0 /* Poop.swift in Sources */,
+				BF23A4AC2A0F7AF600DE3BFB /* AddGrowthViewController.swift in Sources */,
+				BF06ABC72A0CCB5800CC06E0 /* FeedDetailViewController.swift in Sources */,
+				BF06ABD52A0CCB5800CC06E0 /* SleepTableViewController.swift in Sources */,
+				BF06ABDB2A0DAE9B00CC06E0 /* GrowthDetailViewController.swift in Sources */,
+				BF23A4AE2A10427F00DE3BFB /* AddPoopViewController.swift in Sources */,
+				BF06ABD02A0CCB5800CC06E0 /* ViewController.swift in Sources */,
+				BF06ABC92A0CCB5800CC06E0 /* Growth.swift in Sources */,
+				BF23A4AA2A0F7AEA00DE3BFB /* AddSleepViewController.swift in Sources */,
+				BF06ABC82A0CCB5800CC06E0 /* Sleep.swift in Sources */,
+				BF06ABCE2A0CCB5800CC06E0 /* FeedTableViewCell.swift in Sources */,
+				BF06ABDD2A0DB77600CC06E0 /* PoopDetailViewController.swift in Sources */,
+				BF06ABCF2A0CCB5800CC06E0 /* SleepTableViewCell.swift in Sources */,
+				BF06ABD22A0CCB5800CC06E0 /* PoopTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,11 +421,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F4XZZG5H8U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BabyCare/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -371,6 +441,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = au.edu.utas.kit721.apandey3.BabyCare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BabyCare/Dashboard/BabyCare-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,11 +453,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F4XZZG5H8U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BabyCare/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -399,6 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = au.edu.utas.kit721.apandey3.BabyCare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BabyCare/Dashboard/BabyCare-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -428,7 +503,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BFA0EEBD2A005DCA00135344 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		BF0739D52A1112EC00ABF606 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -439,10 +514,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BFA0EEBE2A005DCA00135344 /* FirebaseFirestoreSwift */ = {
+		BF0739D62A1112EC00ABF606 /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BFA0EEBD2A005DCA00135344 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = BF0739D52A1112EC00ABF606 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		BF0739D82A1112EC00ABF606 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF0739D52A1112EC00ABF606 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

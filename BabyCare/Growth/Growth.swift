@@ -13,5 +13,5 @@ public struct Growth : Codable
     @DocumentID var documentID:String?
     var height: String
     var measuredDate: String
-    var growthNote: String
+
 }
